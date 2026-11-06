@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Campus Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>StudentHub</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#bookings">My Bookings (<span id="booking-count">0</span>)</a>
+      <a href="#confirm">Confirm</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Everything a student needs, in one place</h2>
+    <p>Book tutoring, laundry, printing and more from trusted student providers.</p>
+  </section>
+
+  <section id="search-bar">
+    <input type="text" id="search" placeholder="Search services...">
+    <select id="category">
+      <option value="all">All categories</option>
+      <option value="Academic">Academic</option>
+      <option value="Daily Life">Daily Life</option>
+      <option value="Creative">Creative</option>
+    </select>
+  </section>
+
+  <section id="services">
+    <h2>Available Services</h2>
+    <div id="service-list"></div>
+  </section>
+
+  <section id="bookings">
+    <h2>My Bookings</h2>
+    <div id="booking-items"></div>
+    <p>Total: KES <span id="booking-total">0</span></p>
+  </section>
+
+  <section id="confirm">
+    <h2>Confirm Your Booking</h2>
+    <form id="booking-form">
+      <input type="text" id="name" placeholder="Full name" required>
+      <input type="tel" id="phone" placeholder="Phone number" required>
+      <input type="text" id="location" placeholder="Where should the service happen?" required>
+      <input type="date" id="date" required>
+      <input type="time" id="time" required>
+      <select id="payment">
+        <option>M-Pesa</option>
+        <option>Card</option>
+        <option>Pay after service</option>
+      </select>
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <div id="confirmation"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 StudentHub | support@studenthub.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
